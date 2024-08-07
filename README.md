@@ -8,7 +8,6 @@ Esta é uma API RESTful para gerenciar filmes, construída com Node.js, Express 
 - Express
 - MongoDB
 - Mongoose
-- CORS
 
 ## Pré-requisitos
 
