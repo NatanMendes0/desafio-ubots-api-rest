@@ -82,5 +82,5 @@ router.get('/unreviewed', async (req, res) => {
     }
 });
 
-// exporta o router para ser usado em outros arquivos
+// exporta o router para ser usado no server.js
 module.exports = router;
