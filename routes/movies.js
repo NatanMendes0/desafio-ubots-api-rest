@@ -71,9 +71,9 @@ router.patch('/:id/rate', async (req, res) => {
 // indicar um filme não avaliado
 router.get('/unreviewed', async (req, res) => {
     try {
-        const movie = await Movie.findOne({ reviewed: false });
-        if (movie) {
-            res.json(movie);
+        const movies = await Movie.find({ reviewed: false });
+        if (movies.length > 0) {
+            res.json(movies);
         } else {
             res.status(404).json({ message: 'Nenhum filme não avaliado encontrado!' });
         }
